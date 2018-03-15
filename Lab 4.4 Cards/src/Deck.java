@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+
 /**
  * 
  * @author Alyssa Ma
  * 3/13/18
  * Period 2
  */
-public class Deck (String [] rank, String [] suit, int [] value)
+public class Deck(String [] rank, String [] suit, int [] value)
 {
+	
+	this.Dealt = new ArrayList<Card>();
+	this.unDealt = new ArrayList<Card>();
+
 	ArrayList<Card> unDealt = new ArrayList<Card>();
 	ArrayList<Card> Dealt = new ArrayList<Card>();
 	
@@ -16,4 +22,6 @@ public class Deck (String [] rank, String [] suit, int [] value)
 			unDealt.add(newCard(ranks[i], suits[j], value[i]));
 		}
 	}
+	
+	
 }
